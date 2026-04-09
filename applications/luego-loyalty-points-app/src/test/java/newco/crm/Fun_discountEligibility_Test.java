@@ -33,7 +33,7 @@ class Fun_discountEligibility_Test {
             "the request": {
                 "LGType_": "newco.crm.Request",
                 "customerName": "Jane",
-                "loyaltyLevel": [ "Gold" ],
+                "loyaltyLevel": [ "G" ],
                 "products": []
             }
         }     

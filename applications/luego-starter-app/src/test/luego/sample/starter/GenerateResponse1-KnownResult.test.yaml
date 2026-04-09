@@ -1,0 +1,18 @@
+---
+when calling: sample.starter.GenerateResponse1
+using language: en
+
+with inputs: |
+  {
+    "the request": {
+      "LGType_": "sample.starter.Request",
+      "message": "hello"
+    }
+  }
+
+we expect: 
+  - a known output: |
+      {
+        "LGType_": "sample.starter.Response",
+        "message": "HELLO"
+      }

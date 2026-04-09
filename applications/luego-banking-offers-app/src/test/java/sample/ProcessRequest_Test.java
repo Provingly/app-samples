@@ -26,7 +26,7 @@ class GenerateResponse1_Test {
 
 
     @Test
-    void GenerateResponse1() {
+    void ProcessRequest1() {
         String parametersString = 
         """
         { 

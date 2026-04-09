@@ -21,7 +21,7 @@
         <maven.compiler.release>${java.version}</maven.compiler.release>
 
         <!-- Version used to run Luego programs-->
-        <luego.version>1.0.0-b59</luego.version>
+        <luego.version>1.0.0-b68</luego.version>
     </properties>
 
 
@@ -63,7 +63,7 @@
                 <plugin>
                     <groupId>io.provingly</groupId>
                     <artifactId>luego-maven-plugin</artifactId>
-                    <version>1.0.0-beta16</version>
+                    <version>1.0.0-beta22</version>
                 </plugin>
 
                 <plugin>
@@ -86,11 +86,18 @@
                 <executions>
                     <execution>
                         <goals>
+                            <goal>generate-app</goal>
+                            <goal>add-package</goal>
+                            <goal>add-function</goal>
+                            <goal>add-decision-table</goal>
+                            <goal>add-decision-model</goal>
+                            <goal>add-derivation-model</goal>
                             <goal>compile</goal>
+                            <goal>list-operations</goal>
+                            <goal>execute</goal>
                             <goal>package</goal>
-                            <goal>generateApp</goal>
-                            <!-- 
                             <goal>test</goal>
+                            <!-- 
                             <goal>deploy</goal>
                             -->
                         </goals>

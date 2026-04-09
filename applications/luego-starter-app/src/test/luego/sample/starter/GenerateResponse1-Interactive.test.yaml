@@ -1,0 +1,26 @@
+---
+when calling: sample.starter.GenerateResponse1
+using language: en
+
+with inputs: |
+  {
+    "the request": {
+      "LGType_": "sample.starter.Request"
+    }
+  }
+
+we expect: 
+  - missing elements:
+    - path: the request.message
+      type: Text
+      question: what is the message?
+
+    when answered with:
+    - path: the request.message
+      value: hello there!
+
+  - a known output: |
+      {
+        "LGType_": "sample.starter.Response",
+        "message": "HELLO THERE!"
+      }

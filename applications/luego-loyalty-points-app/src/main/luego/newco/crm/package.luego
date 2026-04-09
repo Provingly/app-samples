@@ -9,7 +9,7 @@ Request is a record
     - with zero or more products (product): Product
 
 LoyaltyLevel is an ordered enumeration with domain:
-    'Silver', 'Gold', 'Platinum'
+    'Silver': 'S', 'Gold': 'G', 'Platinum': 'P'
 
 Product is a record
     - with one id: Text

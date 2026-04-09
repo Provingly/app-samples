@@ -46,7 +46,7 @@ class GenerateResponse1_Test {
         """
         {
             "LGType_": "sample.starter.Response",
-            "message":"HELLO"
+            "message": "HELLO"
         }
         """,
         appRunner.dataModel()), scala.None$.MODULE$);

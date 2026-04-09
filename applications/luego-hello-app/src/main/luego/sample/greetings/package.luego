@@ -14,7 +14,6 @@ Person is a record
 Honorific is an enumeration with domain:
     'Mr', 'Mrs', 'Miss', 'Ms', 'Mx', 'Sir', 'Dame', 'Dr', 'Cllr', 'Lady', 'Lord'
 
-
 //-----------------------
 // Response
 //-----------------------
