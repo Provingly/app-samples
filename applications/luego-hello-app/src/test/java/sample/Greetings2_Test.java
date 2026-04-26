@@ -31,9 +31,9 @@ class Greetings2_Test {
         """
         { 
             "request": {
-                "LGType_": "sample.greetings.Request",
+                "type_": "sample.greetings.Request",
                 "person": {
-                    "LGType_": "sample.greetings.Person",
+                    "type_": "sample.greetings.Person",
                     "name": "Jane",
                     "honorific": []
                 }
@@ -49,7 +49,7 @@ class Greetings2_Test {
       assertEquals(ResultUtil.hasKnownValue(evalRes.toOption().get(), 
         """
         {
-            "LGType_": "sample.greetings.Response",
+            "type_": "sample.greetings.Response",
             "message":"Hello Jane!"
         }
         """,
@@ -62,9 +62,9 @@ class Greetings2_Test {
         """
         { 
             "request": {
-                "LGType_": "sample.greetings.Request",
+                "type_": "sample.greetings.Request",
                 "person": {
-                  "LGType_": "sample.greetings.Person"
+                  "type_": "sample.greetings.Person"
                 }
             }
         }     

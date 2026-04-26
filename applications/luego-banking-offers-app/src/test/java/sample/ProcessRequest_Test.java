@@ -31,11 +31,11 @@ class GenerateResponse1_Test {
         """
         { 
             "the request": {
-                "LGType_": "sample.banking.Request",
+                "type_": "sample.banking.Request",
                 "date": "2025-12-10"
             },
             "the customer": {
-                "LGType_": "sample.banking.Person",
+                "type_": "sample.banking.Person",
                 "dateOfBirth": "2000-10-10"
             }            
         }     
@@ -49,7 +49,7 @@ class GenerateResponse1_Test {
       assertEquals(ResultUtil.hasKnownValue(evalRes.toOption().get(), 
         """
         {
-          "LGType_": "sample.banking.SpecialPriceOffer",
+          "type_": "sample.banking.SpecialPriceOffer",
           "percentageDiscount": 0.1,
           "validUntil": "2025-12-31"
         }

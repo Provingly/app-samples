@@ -17,7 +17,7 @@ public class ExploratoryTestRunner {
         """
         {
           "the request": {
-            "LGType_": "sample.greetings.Request"
+            "type_": "sample.greetings.Request"
           }
         }
         """

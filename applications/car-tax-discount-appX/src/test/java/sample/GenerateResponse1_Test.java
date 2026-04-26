@@ -31,7 +31,7 @@ class GenerateResponse1_Test {
         """
         { 
             "the request": {
-                "LGType_": "sample.starter.Request",
+                "type_": "sample.starter.Request",
                 "message": "hello"
             }
         }     
@@ -45,7 +45,7 @@ class GenerateResponse1_Test {
       assertEquals(ResultUtil.hasKnownValue(evalRes.toOption().get(), 
         """
         {
-            "LGType_": "sample.starter.Response",
+            "type_": "sample.starter.Response",
             "message":"HELLO"
         }
         """,

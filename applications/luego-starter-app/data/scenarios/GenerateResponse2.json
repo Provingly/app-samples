@@ -1,0 +1,9 @@
+{
+    "model": "sample.starter.GenerateResponse2",
+    "inputs": {
+        "request": {
+            "type_": "sample.starter.Request",
+            "message": "Hello"
+        }
+    }
+}

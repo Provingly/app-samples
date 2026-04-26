@@ -13,10 +13,10 @@ public class MyScenarioRunner extends ScenarioRunner {
                     """
                     {
                       "the request": {
-                        "LGType_": "sample.banking.Request"
+                        "type_": "sample.banking.Request"
                       },
                       "the customer": {
-                        "LGType_": "sample.banking.Person"
+                        "type_": "sample.banking.Person"
                       }
                     }
                     """

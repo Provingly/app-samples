@@ -31,7 +31,7 @@ class Fun_discountEligibility_Test {
         """
         { 
             "the request": {
-                "LGType_": "newco.crm.Request",
+                "type_": "newco.crm.Request",
                 "customerName": "Jane",
                 "loyaltyLevel": [ "G" ],
                 "products": []
@@ -47,7 +47,7 @@ class Fun_discountEligibility_Test {
       assertEquals(ResultUtil.hasKnownValue(evalRes.toOption().get(), 
         """
         {
-          "LGType_":"newco.crm.Response",
+          "type_":"newco.crm.Response",
           "discount":0.0,
           "message":"Hello Jane",
           "loyaltyPointIncrement":0

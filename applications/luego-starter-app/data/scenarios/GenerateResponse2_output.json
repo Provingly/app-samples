@@ -1,0 +1,7 @@
+{
+  "type": "Known",
+  "output": {
+    "type_": "sample.starter.Response",
+    "message": "HELLO"
+  }
+}

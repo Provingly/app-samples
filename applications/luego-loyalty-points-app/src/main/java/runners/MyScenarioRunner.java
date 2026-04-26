@@ -12,7 +12,7 @@ public class MyScenarioRunner extends ScenarioRunner {
                         """
                         {
                           "the request": {
-                            "LGType_": "newco.crm.Request",
+                            "type_": "newco.crm.Request",
                             "customerName": "Jane",
                             "value": 120,
                             "products": []
@@ -24,7 +24,7 @@ public class MyScenarioRunner extends ScenarioRunner {
                         """
                         {
                           "the request": {
-                            "LGType_": "newco.crm.Request",
+                            "type_": "newco.crm.Request",
                             "products": []
                           }
                         }"""
@@ -34,7 +34,7 @@ public class MyScenarioRunner extends ScenarioRunner {
                         """
                         {
                           "the request": {
-                            "LGType_": "newco.crm.Request",
+                            "type_": "newco.crm.Request",
                             "customerName": 120,
                             "products": []
                           }

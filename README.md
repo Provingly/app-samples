@@ -15,9 +15,9 @@ This repository contains the following application samples.
 | car-tax-discount (soon)       | Eligibility for tax reductions | How to model sophisticated eligibility criteria        |
 
 ## Prerequisites to run the samples
-- maven
 - Java 21: set your JAVA_HOME so that it points to Java JDK21 or later
 If you need to install Java 21, you can download and install it from https://adoptium.net/temurin/releases/?arch=any&version=21&os=any
+- maven: https://maven.apache.org/install.html
 
 ## Compiling the Luego source code
 Run the following commands to compile the source code of all the modules contained in the folder 'applications'. These commands will compile both the Luego source code (the business logic of your Luego applications) and some utility classes (like scenario runners and conversational exploratory tests) written in Java.
@@ -25,6 +25,8 @@ Run the following commands to compile the source code of all the modules contain
 cd applications
 mvn clean compile
 ```
+
+The first time you run this command, maven will download all the necessary dependencies and this might take a couple of minutes. Once the dependencies have been downloaded, the actual compilation of the Luego programs will take place.
 
 When the compilation is successful for a given module, the folder target/luego will contain binary files for each function or decision model. We will then be ready to run Luego programs that use those functions and decision models.
 
@@ -35,6 +37,12 @@ If you compile the Luego source again after a modification of the source code, t
 cd luego-starter-app
 mvn exec:java@scenario-runner
 ```
+
+```
+cd luego-starter-app
+mvn luego:execute
+```
+
 This maven goal runs the Java program `runners.MyScenarioRunner` located in src/main/java. The code in the MyScenarioRunner.java file shows how you can easily integrate a Luego program with Java.
 
 ### Running exploratory tests for a specific application
@@ -127,6 +135,12 @@ luego-version: 1.0.0-b49
 build-date: 2025-12-17T22:07:13.246236
 ```
 
+To get a list of all the goals available for Luego applications, you can run:
+```
+mvn luego:help
+mvn luego:help -Ddetail
+mvn luego:help -Ddetail -Dgoal=execute
+```
 
 ## Documentation of the Luego programming language and the Provingly technology
 Visit https://docs.provingly.io

@@ -5,14 +5,14 @@ using language: en
 with inputs: |
   {
     "the request": {
-      "LGType_": "sample.starter.Request",
+      "type_": "sample.starter.Request",
       "message": "hello"
     }
   }
 
 we expect: 
-  - a known output: |
-      {
-        "LGType_": "sample.starter.Response",
-        "message": "HELLO"
-      }
+- a known output: |
+    {
+      "type_": "sample.starter.Response",
+      "message": "HELLO"
+    }

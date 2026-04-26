@@ -19,7 +19,7 @@ public class ExploratoryTestRunner {
         """
         {
           "the request": {
-            "LGType_": "newco.crm.Request"
+            "type_": "newco.crm.Request"
           }
         }
         """

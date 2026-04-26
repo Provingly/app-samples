@@ -1,0 +1,20 @@
+---
+when calling: sample.starter.GenerateResponse2
+using language: en
+
+with inputs: |
+    {
+      "request": {
+        "type_": "sample.starter.Request",
+        "message": "Hi there"
+      }
+    }
+
+we expect:
+- a known output: |
+    {
+      "type_": "sample.starter.Response",
+      "message": "HI THERE"
+    }
+
+               

@@ -13,7 +13,7 @@ public class MyScenarioRunner extends ScenarioRunner {
                         """
                         {
                           "the request": {
-                            "LGType_": "sample.starter.Request",
+                            "type_": "sample.starter.Request",
                             "message": "Hello"
                           }
                         }"""
@@ -23,7 +23,7 @@ public class MyScenarioRunner extends ScenarioRunner {
                         """
                         {
                           "the request": {
-                            "LGType_": "sample.starter.Request"
+                            "type_": "sample.starter.Request"
                           }
                         }"""
                   ),
@@ -32,7 +32,7 @@ public class MyScenarioRunner extends ScenarioRunner {
                         """
                         {
                           "request": {
-                            "LGType_": "sample.starter.Request",
+                            "type_": "sample.starter.Request",
                             "message": "Hello"
                           }
                         }"""
@@ -42,7 +42,7 @@ public class MyScenarioRunner extends ScenarioRunner {
                         """
                         {
                           "request": {
-                            "LGType_": "sample.starter.Request"
+                            "type_": "sample.starter.Request"
                           }
                         }"""
                   )

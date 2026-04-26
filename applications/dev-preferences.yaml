@@ -1,0 +1,36 @@
+---
+# LOG LEVEL
+logLevel: Error
+
+# APP GENERATION
+appGeneration:
+  sample data types: true
+  sample function: true
+  sample derivation model: true
+  sample decision model: true
+  sample decision table: true
+
+# CODE GENERATION
+codeGeneration:
+  default target package: myapp.apack
+
+# COMPILE
+compilation:
+  logLevel: Info
+  strict mode: false
+
+# INSPECT
+
+# EXECUTE
+execution:
+  logLevel: Error
+  test generation:
+    full interaction test: true
+    full object equality: true
+    object path equality: true
+    object collection size: true
+    object collection contains: true
+
+# DEPLOY
+deployment:
+  default configuration: deployments/LOCAL_SERVER.yaml    

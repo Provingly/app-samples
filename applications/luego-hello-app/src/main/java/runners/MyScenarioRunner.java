@@ -24,10 +24,10 @@ public class MyScenarioRunner extends ScenarioRunner {
                         """
                         {
                           "the request": {
-                            "LGType_": "sample.greetings.Request",
+                            "type_": "sample.greetings.Request",
                             "dateTime": "2023-11-06T11:00:00",
                             "person": {
-                              "LGType_": "sample.greetings.Person",
+                              "type_": "sample.greetings.Person",
                               "name": "Smith",
                               "honorific": []                            
                             }  
@@ -39,7 +39,7 @@ public class MyScenarioRunner extends ScenarioRunner {
                         """
                         {
                           "the request": {
-                            "LGType_": "sample.greetings.Request"
+                            "type_": "sample.greetings.Request"
                           }
                         }"""
                   ),
@@ -48,10 +48,10 @@ public class MyScenarioRunner extends ScenarioRunner {
                         """
                         {
                           "request": {
-                            "LGType_": "sample.greetings.Request",
+                            "type_": "sample.greetings.Request",
                             "dateTime": "2023-11-06T13:00:00",
                             "person": {
-                              "LGType_": "sample.greetings.Person",
+                              "type_": "sample.greetings.Person",
                               "name": "Joe",
                               "honorific": ["Mr"]                            
                             }  
@@ -63,7 +63,7 @@ public class MyScenarioRunner extends ScenarioRunner {
                         """
                         {
                           "request": {
-                            "LGType_": "sample.greetings.Request"
+                            "type_": "sample.greetings.Request"
                           }
                         }"""
                   )

@@ -5,7 +5,7 @@ rootNode: 'Eligible'
 
 graph:
 - node: 'Eligible'
-  type: 'Compute'
+  kind: 'Compute'
   output: 'newco.crm.Response'
   body: >
     Response(
@@ -18,7 +18,7 @@ graph:
   dependsOn: ['discount', 'new points', 'request']
 
 - node: 'discount'
-  type: 'Compute'
+  kind: 'Compute'
   output: 'Number'
   body: >
     {
@@ -34,7 +34,7 @@ graph:
   dependsOn: ['request']
 
 - node: 'new points'
-  type: 'Compute'
+  kind: 'Compute'
   output: 'Integer'
   body: >
     depending on the loyaltyLevel of `the request` {
@@ -56,7 +56,7 @@ graph:
 
 - node: 'request'
   alias: 'the request'
-  type: 'Info'
+  kind: 'Info'
   output: 'newco.crm.Request'
   level: '2'
   y: '0.5'

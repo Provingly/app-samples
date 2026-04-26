@@ -5,7 +5,7 @@ rootNode: 'Concatenate'
 
 graph:
 - node: 'Concatenate'
-  type: 'Compute'
+  kind: 'Compute'
   output: 'sample.greetings.Response'
   body: >
     Response(message = `greeting text` + `honorific text` + the name of the person of `the request` + '!')
@@ -15,7 +15,7 @@ graph:
   dependsOn: ['greeting text', 'honorific text', 'request']
 
 - node: 'greeting text'
-  type: 'Compute'
+  kind: 'Compute'
   output: 'Text'
   body: >
     depending on the honorific of the person of `the request` {
@@ -39,7 +39,7 @@ graph:
   dependsOn: ['request']
 
 - node: 'honorific text'
-  type: 'Compute'
+  kind: 'Compute'
   output: 'Text'
   body: >
     depending on the honorific of the person of `the request` {
@@ -53,7 +53,7 @@ graph:
 
 - node: 'request'
   alias: 'the request'
-  type: 'Info'
+  kind: 'Info'
   output: 'sample.greetings.Request'
   level: '2'
   y: '0.5'

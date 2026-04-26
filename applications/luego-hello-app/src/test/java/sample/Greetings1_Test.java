@@ -31,10 +31,10 @@ class Greetings1_Test {
         """
         { 
             "the request": {
-                "LGType_": "sample.greetings.Request",
+                "type_": "sample.greetings.Request",
                 "dateTime": "2023-11-06T11:00:00",
                 "person": {
-                    "LGType_": "sample.greetings.Person",
+                    "type_": "sample.greetings.Person",
                     "name": "Smith",
                     "honorific": ["Mr"]
                 }
@@ -50,7 +50,7 @@ class Greetings1_Test {
       assertEquals(ResultUtil.hasKnownValue(evalRes.toOption().get(), 
         """
         {
-            "LGType_": "sample.greetings.Response",
+            "type_": "sample.greetings.Response",
             "message":"Good morning Mr Smith!"
         }
         """,
